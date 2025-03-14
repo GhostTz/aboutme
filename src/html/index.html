@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Startseite</a></li>
+                    <li><a href="#about">Über mich</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">Hi, ich bin <span class="highlight">Milo</span>, <span class="ghost-text">aka Ghost</span></h1>
+                <p class="animate-text delay-1">Webentwickler aus Gießen</p>
+                <div class="cta-buttons animate-text delay-2">
+                    <a href="#about" class="btn primary">Über mich</a>
+                    <a href="#contact" class="btn secondary">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+        <div class="shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">Über mich</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <div class="image-container">
+                    <img src="../../img.jpg" alt="Milo" class="profile-image">
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>Entwickler & Enthusiast</h3>
+                <p>Hey! Ich bin ein 18-jähriger Entwickler aus Gießen. Ich habe eine Leidenschaft für die Erstellung schöner, funktionaler Websites mit reinem HTML, CSS und JavaScript.</p>
+                <p>Ich liebe die Herausforderung, Websites von Grund auf ohne Frameworks zu erstellen, wobei ich mich auf sauberen Code und optimale Leistung konzentriere. Die kreative Freiheit und Kontrolle, die mit der Vanilla-Webentwicklung einhergeht, treibt meine Leidenschaft an. Ausserdem Programmiere ich Discord Bots in Javascript.</p>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span class="info-title">Alter:</span>
+                        <span class="info-value">18</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Standort:</span>
+                        <span class="info-value">Gießen, Deutschland</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="http://discord.com/users/966050274437382205" target="_blank" class="social-link">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sloow.vibes/" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/GhostTz" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title">Meine Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>CSS</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>Kontaktiere mich, wenn du einen Entwickler suchst, eine Frage hast oder einfach in Kontakt treten willst. </p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactMethod">Kontaktmethode</label>
+                            <select id="contactMethod" required>
+                                <option value="" disabled selected>Kontaktmethode auswählen</option>
+                                <option value="discord">Discord</option>
+                                <option value="telegram">Telegram</option>
+                                <option value="email">E-Mail</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" id="usernameGroup">
+                            <label for="username">Benutzername</label>
+                            <input type="text" id="username" placeholder="Dein Benutzername">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" placeholder="Deine E-Mail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" placeholder="Deine Nachricht" required></textarea>
+                        </div>
+
+                        <div id="cooldownMessage" class="cooldown-message"></div>
+                        
+                        <button type="submit" class="btn primary">Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Milo. Alle Rechte vorbehalten.</p>
+            <div class="back-to-top">
+                <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div id="footerConfirmation" class="footer-confirmation">
+            <div class="checkmark-circle">
+                <div class="checkmark"></div>
+            </div>
+            <span>Nachricht erfolgreich gesendet.</span>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <div id="toast" class="toast"></div>
+    
+    <div id="successModal" class="success-modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3 class="modal-title">Nachricht gesendet!</h3>
+            <p class="modal-message">
+                Vielen Dank für deine Nachricht! Sie wurde erfolgreich gesendet.
+                <br><br>
+                Ich werde mich innerhalb der nächsten 24 Stunden bei dir melden.
+            </p>
+            <button class="modal-close">Schließen</button>
+        </div>
+    </div>
+</body>
+</html>
+
